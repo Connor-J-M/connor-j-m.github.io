@@ -1,13 +1,19 @@
 :root{
   --accent-color: coral;
+  --accent-color-2:#cbff55;
   --main-color: #f1f9e0;
+  --default-font: ;
+  --title-font: ;
  
 }
 
 h1 {
+  font-family: var(--title-font);
   color: var(--accent-color);
   text-align: center;
   font-size: 5vw;
+  padding-top: 0px;
+  margin-top: 0px;
 }
 
 h2 {
@@ -35,7 +41,21 @@ nav {
   padding: 15px;
 }
 
-a {
+hr {
+  height: 10px;
+  background-color: var(--accent-color-2);
+}
+
+b {
+  color: var(--accent-color);
+}
+
+p {
+  font-family: var(--default-font);
+  font-size: 1.5vw;
+}
+
+nav a {
   padding: 10px;
   color: var(--accent-color);
   font-size: 2vw;
@@ -80,16 +100,23 @@ a:active {
   text-align: center;
 }
 
-hr {
-  height: 10px;
-  background-color: #cbff55;
-}
-
-b {
-  color: var(--accent-color);
-}
-
-p {
+.flexbox {
   font-family: var(--default-font);
-  font-size: 1.5vw;
+  display: flex;
+  flex-direction: column;
+  border: 5px solid var(--accent-color);
+  padding-left: 15px;
 }
+
+.flexbox h2 {
+  font-size: 1.5vw;
+  text-align: left;
+}
+
+.flexbox h3 {
+  font-size: 1vw;
+  padding-left: 25px;
+}
+
+
+
