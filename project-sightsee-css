@@ -1,0 +1,55 @@
+root{
+  --default-color: black;
+ 
+}
+
+h1 {
+  color: coral;
+  text-align: center;
+}
+
+h2 {
+  color: var(--default-color);
+  text-align: center;
+}
+
+h3 {
+  font: 15px Arial, sans-serif;
+}
+
+html {
+  background-color: #c7f7af;
+}
+
+text{
+  font-family: var(--default-font);
+}
+
+nav {
+  text-align: center;
+  text-decoration: underline;
+  padding: 15px;
+}
+
+a {
+  padding: 10px;
+}
+
+.body {
+  
+}
+
+.boxRight {
+  float: right;
+  min-height: 250px;
+  width: 45%;
+  border: 5px solid blue;
+  text-align: center;
+}
+
+.boxLeft {
+  min-height: 250px;
+  width: 45%;
+  border: 5px solid red;
+  text-align: center;
+}
