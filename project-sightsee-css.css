@@ -11,7 +11,7 @@ h1 {
   font-family: var(--title-font);
   color: var(--accent-color);
   text-align: center;
-  font-size: 5vw;
+  font-size: 6vw;
   padding-top: 0px;
   margin-top: 0px;
 }
@@ -23,7 +23,7 @@ h2 {
 }
 
 h3 {
-  font: 15px Arial, sans-serif;
+  font: var(--default-font);
   font-size: 2vw;
 }
 
@@ -42,8 +42,20 @@ nav {
 }
 
 hr {
-  height: 10px;
+  position: relative;
+  right: 15px;
+  margin-bottom: 25px;
+  padding-bottom: none;
+  width: 110%;
+  border: none;
+  height: 5px;
   background-color: var(--accent-color-2);
+}
+
+div hr {
+  width: 70%;
+  position: relative;
+  left: 5px;
 }
 
 b {
@@ -53,6 +65,11 @@ b {
 p {
   font-family: var(--default-font);
   font-size: 1.5vw;
+}
+
+img {
+  padding: none;
+  margin: none;
 }
 
 nav a {
@@ -104,7 +121,7 @@ a:active {
   font-family: var(--default-font);
   display: flex;
   flex-direction: column;
-  border: 5px solid var(--accent-color);
+  border: 5px dashed var(--accent-color);
   padding-left: 15px;
 }
 
@@ -118,5 +135,17 @@ a:active {
   padding-left: 25px;
 }
 
+.flexbox img {
+  float: right;
+  width: 2.5vw;
+  height: 2.5vw;
+}
+
+.instagram {
+  
+  width: 32%;
+  margin: auto;
+  
+}
 
 
